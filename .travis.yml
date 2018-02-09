@@ -9,3 +9,4 @@ before_script:
 script:
   - RAILS_ENV=test bundle exec rake db:migrate
   - RAILS_ENV=test REDMINE_LANG=en bundle exec rake redmine:load_default_data
+  - bundle exec rake test
