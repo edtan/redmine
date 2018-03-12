@@ -94,6 +94,11 @@ group :test do
   gem "selenium-webdriver"
 end
 
+group :development, :test do
+  gem "minitest", "5.10.3"
+  gem "byebug"
+end
+
 local_gemfile = File.join(File.dirname(__FILE__), "Gemfile.local")
 if File.exists?(local_gemfile)
   eval_gemfile local_gemfile
