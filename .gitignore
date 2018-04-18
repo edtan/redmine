@@ -40,3 +40,8 @@
 /Gemfile.lock
 /Gemfile.local
 
+/tags
+
+.swp*
+.swo*
+.byebug_history
